@@ -1,0 +1,6 @@
+[submodule "rockchip-mkbootimg"]
+	path = rockchip-mkbootimg
+	url = https://github.com/neo-technologies/rockchip-mkbootimg.git
+[submodule "split-appended-dtb"]
+	path = split-appended-dtb
+	url = https://github.com/dianlujitao/split-appended-dtb
