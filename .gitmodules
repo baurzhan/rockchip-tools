@@ -4,3 +4,6 @@
 [submodule "split-appended-dtb"]
 	path = split-appended-dtb
 	url = https://github.com/dianlujitao/split-appended-dtb
+[submodule "tools"]
+	path = tools
+	url = https://github.com/rockchip-linux/tools

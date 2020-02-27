@@ -35,4 +35,6 @@ RUN cd /usr/src/rockchip-mkbootimg \
     && make install \
     && cd .. \
     && rm -rf rockchip-mkbootimg
-RUN chmod +x /usr/local/bin/*
+COPY tools/linux/Linux_Pack_Firmware/rockdev/rkImageMaker /usr/local/bin/rkImageMaker
+COPY tools/linux/Linux_Pack_Firmware/rockdev/*.sh /scripts/
+RUN chmod +x /usr/local/bin/* /scripts/*

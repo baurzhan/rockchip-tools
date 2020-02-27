@@ -101,3 +101,25 @@ docker run --rm -it -v $(pwd):/data oilab/rockchip-tools:latest \
 docker run --rm -it -v $(pwd):/data oilab/rockchip-tools:latest \
 	unmkcpiogz initramfs.cpio.gz
 ```
+
+## Scripts (added in version 1.1.0)
+```
+docker run --rm -it -v $(pwd):/data oilab/rockchip-tools:latest \
+	/scripts/rk3288-mkupdate.sh
+
+Available scripts:
+	/scripts/px30-mkupdate.sh
+	/scripts/px3se-mkupdate.sh
+	/scripts/rk1808-mkupdate.sh
+	/scripts/rk3036-mkupdate.sh
+	/scripts/rk3128h-mkupdate.sh
+	/scripts/rk3128-mkupdate.sh
+	/scripts/rk312x-mkupdate.sh
+	/scripts/rk3229-mkupdate.sh
+	/scripts/rk3288-mkupdate.sh
+	/scripts/rk3308-mkupdate.sh
+	/scripts/rk3326-mkupdate.sh
+	/scripts/rk3328-mkupdate.sh
+	/scripts/rk3399-mkupdate.sh
+	/scripts/unpack.sh
+
