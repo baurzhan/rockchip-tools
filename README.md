@@ -102,6 +102,16 @@ docker run --rm -it -v $(pwd):/data oilab/rockchip-tools:latest \
 	unmkcpiogz initramfs.cpio.gz
 ```
 
+##  extract device tree source
+```
+# extract device tree binary from boot.img
+docker run --rm -it -v $(pwd):/data oilab/rockchip-tools:latest \
+	split-appended-dtb  boot.img
+# decompile device tree binary
+docker run --rm -it -v $(pwd):/data oilab/rockchip-tools:latest \
+	dtc -I dtb -O dts -o devicetree.dts devicetree.dtb
+```
+
 ## Scripts (added in version 1.1.0)
 ```
 docker run --rm -it -v $(pwd):/data oilab/rockchip-tools:latest \
